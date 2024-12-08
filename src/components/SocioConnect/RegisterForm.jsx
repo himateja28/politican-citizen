@@ -46,7 +46,7 @@ function RegisterForm() {
 
     // Send the formData via axios to the backend
     axios
-      .post("http://localhost:8080/user/signup", formData)
+      .post("https://politician-citizen-production.up.railway.app/user/signup", formData)
       .then((res) => {
         if (res) {
           // Send a registration success email
