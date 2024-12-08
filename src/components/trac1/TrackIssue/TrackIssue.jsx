@@ -22,7 +22,7 @@ function TrackIssue() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.get(`http://localhost:8080/issue/check/${id}`)
+    axios.get(`https://politician-citizen-production.up.railway.app/issue/check/${id}`)
       .then((res) => {
         setModalMessage("Status : "+res.data.status +"Respose is : "+res.data.responses); // Set the response data
         setModalVisible(true); // Show the modal
