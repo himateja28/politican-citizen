@@ -70,7 +70,7 @@ function AdminDashboard() {
   const handleSubmitNewUser = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/user/signup", newUser)
+      .post("https://politician-citizen-production.up.railway.app/user/signup", newUser)
       .then((res) => {
         setUsers([...users, res.data]);
         setNewUser({
