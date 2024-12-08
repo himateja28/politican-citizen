@@ -36,7 +36,7 @@ function UpdateForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    axios.post("http://localhost:8080/update/add", formData).then((res) => {
+    axios.post("https://politician-citizen-production.up.railway.app/update/add", formData).then((res) => {
       alert(res.data);
     });
   };
