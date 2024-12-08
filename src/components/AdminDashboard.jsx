@@ -20,7 +20,7 @@ function AdminDashboard() {
   const navigate = useNavigate(); // Initialize useNavigate for navigation
 
   useEffect(() => {
-    axios.get("http://localhost:8080/admin/users").then((res) => {
+    axios.get("https://politician-citizen-production.up.railway.app/admin/users").then((res) => {
       setUsers(res.data);
     });
   }, []);
