@@ -11,7 +11,7 @@ function LoginForm() {
   function handleLogin(e) {
     e.preventDefault();
     axios
-      .get('https://politician-citizen-production.up.railway.app/login/' + user + '/' + pass)
+      .get('https://politician-citizen-production.up.railway.app/user/login/' + user + '/' + pass)
       .then((res) => {
         if (res.data && res.data.role) {
           const role = res.data.role.toLowerCase();
