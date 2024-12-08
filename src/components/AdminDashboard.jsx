@@ -42,7 +42,7 @@ function AdminDashboard() {
   const handleSubmitEdit = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:8080/admin/users/${editingUser.uid}`, editingUser)
+      .put(`https://politician-citizen-production.up.railway.app/admin/users/${editingUser.uid}`, editingUser)
       .then((res) => {
         const updatedUsers = users.map((user) =>
           user.uid === editingUser.uid ? res.data : user
@@ -57,7 +57,7 @@ function AdminDashboard() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:8080/admin/users/${id}`)
+      .delete(`https://politician-citizen-production.up.railway.app/admin/users/${id}`)
       .then(() => {
         const updatedUsers = users.filter((user) => user.uid !== id);
         setUsers(updatedUsers);
