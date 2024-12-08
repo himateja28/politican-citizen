@@ -11,7 +11,7 @@ const IssuesList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/issue/all") // The API endpoint you created in Spring Boot
+      .get("https://politician-citizen-production.up.railway.app/issue/all") // The API endpoint you created in Spring Boot
       .then((response) => {
         setIssues(response.data);
         setLoading(false);
