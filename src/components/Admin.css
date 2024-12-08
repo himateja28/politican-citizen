@@ -1,0 +1,151 @@
+/* General Page Styles */
+body {
+  background-color: #F5F5F5;
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  padding: 20px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #3F51B5;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Form Container Styles */
+.formContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formContainer h2 {
+  font-size: 1.8rem;
+  color: #3F51B5;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #C5CAE9;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #F9F9F9;
+  color: #333;
+  width: 100%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, select:focus {
+  border-color: #3F51B5;
+  outline: none;
+  box-shadow: 0 0 6px rgba(63, 81, 181, 0.3);
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  color: white;
+}
+
+.addBtn, .submitBtn, .editBtn {
+  background-color: #3F51B5;
+}
+
+.cancelBtn, .deleteBtn {
+  background-color: #F44336;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addBtn:hover, .submitBtn:hover, .editBtn:hover {
+  background-color: #303F9F;
+}
+
+.cancelBtn:hover, .deleteBtn:hover {
+  background-color: #D32F2F;
+}
+
+/* Table Styles */
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.userTable th, .userTable td {
+  border: 1px solid #C5CAE9;
+  padding: 15px;
+  text-align: left;
+}
+
+.userTable th {
+  background-color: #3F51B5;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.userTable td {
+  background-color: #FFFFFF;
+}
+
+.userTable tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+.userTable tr:hover {
+  background-color: #E8EAF6;
+}
+
+/* Button Actions in Table */
+.userTable td button {
+  margin-right: 5px;
+}
+
+.userTable td button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  .userTable th, .userTable td {
+    padding: 12px;
+  }
+}

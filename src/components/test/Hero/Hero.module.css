@@ -1,0 +1,99 @@
+.hero {
+  background-color: #d7dfff;
+  padding: 120px 40px 40px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero:hover {
+  background-color: #a8b9f7; /* Lighter background on hover */
+}
+
+.heroContent {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heroContent:hover {
+  transform: translateY(-10px); /* Smooth upward movement */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Strong shadow on hover */
+}
+
+.heroTitle {
+  font: 48px Arial, sans-serif;
+  color: #000;
+  max-width: 60%;
+  font-weight: 600;
+}
+
+.highlight {
+  font-family: "Arima", sans-serif;
+  color: #2e57fa;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.highlight:hover {
+  color: #1d44b8; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+.highlightRed {
+  font-family: "Arima", sans-serif;
+  color: #fa342b;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.highlightRed:hover {
+  color: #c02a1e; /* Darker red on hover */
+  transform: scale(1.1); /* Slight scale up on hover */
+}
+
+.heroImage {
+  width: 40%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heroImage:hover {
+  transform: scale(1.05); /* Stronger zoom effect on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.heroSubtitle {
+  color: #fb342b;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font: italic 40px "Arimo Hebrew Subset", -apple-system, Roboto, Helvetica,
+    sans-serif;
+  margin: 50px 0 0 0;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.heroSubtitle:hover {
+  color: #c0291c; /* Darker red on hover */
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 100px 20px 40px;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroTitle,
+  .heroImage {
+    max-width: 100%;
+  }
+
+  .heroSubtitle {
+    margin: 30px 0 0;
+    font-size: 32px;
+  }
+}

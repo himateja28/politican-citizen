@@ -1,0 +1,237 @@
+/* General container styling */
+.container {
+  background-color: #f3f6ff; /* Light blue background for a soft look */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 40px 50px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1138px;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .header {
+    max-width: 100%;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 16px;
+  font-family: "Holtwood One SC", -apple-system, Roboto, Helvetica, sans-serif;
+  color: #3e2b5b; /* Dark purple color for a more professional look */
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.logoImage {
+  aspect-ratio: 1.28;
+  object-fit: contain;
+  object-position: center;
+  width: 45px;
+}
+
+.logoText {
+  margin: auto 0;
+  font-size: 28px;
+  transition: font-size 0.3s ease;
+}
+
+.navigation {
+  display: flex;
+  margin-top: 11px;
+  gap: 26px;
+  font-family: "Inter", sans-serif;
+  color: #3e2b5b;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.navItem {
+  flex-grow: 1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Interaction - Hover effect for navigation items */
+.navItem:hover {
+  color: #2e58ff; /* Change to blue when hovered */
+}
+
+/* Main content section */
+.mainContent {
+  align-self: center;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1111px;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.contentWrapper {
+  gap: 30px;
+  display: flex;
+  transition: gap 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+
+.leftColumn {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+
+@media (max-width: 991px) {
+  .leftColumn {
+    width: 100%;
+  }
+}
+
+.registerSection {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  color: #3e2b5b;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.registerTitle {
+  align-self: flex-end;
+  font-size: 36px;
+}
+
+.registerImage {
+  aspect-ratio: 1.21;
+  object-fit: contain;
+  object-position: center;
+  width: 369px;
+  margin-top: 91px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.registerImage:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+.rightColumn {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+
+@media (max-width: 991px) {
+  .rightColumn {
+    width: 100%;
+  }
+}
+
+/* Form styling */
+.formContainer {
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .formContainer {
+    padding: 20px;
+  }
+}
+
+.formField {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.formInput {
+  border-radius: 8px;
+  background-color: #f6f6f6;
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  min-height: 40px;
+  margin-top: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.formInput:focus {
+  border-color: #2e58ff; /* Blue border when focused */
+  background-color: #e8f0fe; /* Light blue background on focus */
+}
+
+.submitButton {
+  align-self: center;
+  border-radius: 8px;
+  background-color: #2e58ff;
+  margin-top: 24px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #3a79f7; /* Slightly darker blue */
+  transform: translateY(-3px); /* Button lifts slightly on hover */
+}
+
+.submitButton:active {
+  transform: translateY(1px); /* Button presses down when clicked */
+}
+
+/* Visually hidden text for accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
