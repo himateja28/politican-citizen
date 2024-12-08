@@ -72,11 +72,12 @@ const IssuesList = () => {
                 {issue.links && (
                   <div className={styles.imageWrapper}>
                     <img
-                      src={issue.links}
-                      alt={`Image for ${issue.iname}`}
-                      className={styles.issueImage}
-                      style={{height:"220px"}}
-                    />
+  src={issue.links}
+  alt={issue.iname}  // Simplify the alt attribute
+  className={styles.issueImage}
+  style={{height: "220px"}}
+/>
+
                   </div>
                 )}
 

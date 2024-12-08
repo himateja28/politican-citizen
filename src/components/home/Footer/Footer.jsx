@@ -34,7 +34,7 @@ const Footer = () => {
               <ul className={styles.linkList}>
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href="#" className={styles.footerLink}>
+                    <a href="/" className={styles.footerLink}>
                       {link}
                     </a>
                   </li>

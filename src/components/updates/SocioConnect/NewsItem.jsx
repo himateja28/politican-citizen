@@ -26,7 +26,7 @@ const NewsItem = ({ image, secondaryImage, content, link }) => {
           </a>
         )}
       </p>
-      <a href="#" className={styles.readMore}>
+      <a href="/" className={styles.readMore}>
         Read More
       </a>
     </article>

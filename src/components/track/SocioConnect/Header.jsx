@@ -35,7 +35,7 @@ function Header() {
           Track Issue
         </a>
         <a
-          href="#"
+          href="/login"
           className={styles.navItem}
           onClick={handleLogout} // Add onClick event for logout
         >

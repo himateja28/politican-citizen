@@ -37,7 +37,7 @@ function RegisterForm() {
     e.preventDefault();
 
     // Password validation: At least one uppercase letter, one special character, one digit, and minimum length of 8
-    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]).{8,}$/;
 
     if (!passwordRegex.test(formData.password)) {
       alert("Password must be at least 8 characters long, contain one uppercase letter, one special character, and one digit.");
