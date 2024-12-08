@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/politican-citizen/static/css/main.7487887b.css",
+    "main.js": "/politican-citizen/static/js/main.1b19f8df.js",
+    "static/js/453.1f67bbd2.chunk.js": "/politican-citizen/static/js/453.1f67bbd2.chunk.js",
+    "index.html": "/politican-citizen/index.html",
+    "main.7487887b.css.map": "/politican-citizen/static/css/main.7487887b.css.map",
+    "main.1b19f8df.js.map": "/politican-citizen/static/js/main.1b19f8df.js.map",
+    "453.1f67bbd2.chunk.js.map": "/politican-citizen/static/js/453.1f67bbd2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7487887b.css",
+    "static/js/main.1b19f8df.js"
+  ]
+}
