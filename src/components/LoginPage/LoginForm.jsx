@@ -15,7 +15,7 @@ function LoginForm() {
       .then((res) => {
         if (res.data && res.data.role) {
           const role = res.data.role.toLowerCase();
-          const sessionDuration = 10 * 60 * 1000; // 10 minutes in milliseconds
+          const sessionDuration = 1 * 60 * 1000; // 10 minutes in milliseconds
           const expirationTime = Date.now() + sessionDuration;
 
           // Store the role, username, and session expiration in localStorage
