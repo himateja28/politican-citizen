@@ -17,6 +17,23 @@ h1 {
   font-size: 2.5rem;
 }
 
+.logoutButton {
+  background-color: #F44336; 
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #D32F2F; /* Darker red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 h3 {
   font-size: 1.5rem;
 }
